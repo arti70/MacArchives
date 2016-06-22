@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MacArchives</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="images/macarchive_logo.png">
+
+    
+    <!--    GOOGLE ANALYTICS SCRIPT-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79748443-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class='navbar-brand' href ='#' onclick='showMain();return false;'>MacArchives Library</a>
+            </div>
+            <!-- Top Menu Items -->
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                           
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav" id=dynNavId>
+<!--
+                        <li>
+                            <a href="index.html" ><i class='fa fa-fw fa-home'> </i> Home</a>
+                        </li>
+-->
+                    </ul>
+            </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                            
+                <div class="row">
+                    <div class="col-lg-12" >
+                        <h1 class="page-header" id= "headerNameId"></h1>
+                        
+<!--
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>  <a href="index.html">Home</a>
+                            </li>
+                            <li class="active" >
+                                <i class="fa fa-file" id= "breadcrumbNameId"></i>
+                            </li>
+                        </ol>
+-->
+                        
+                        <div id= "mainMenuStuffId">
+                            <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i>
+                            <strong>Help us grow and send us any resource you have! </strong>
+                        </div>
+                    </div>
+                </div>
+                            <!-- /.row -->
+
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-yellow">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-institution fa-4x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">260+</div>
+                                                    <div> New Resources!</div>
+                                                </div>
+                                            </div>
+                                        </div>
+            <!--
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+            -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-maroon">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-tasks fa-4x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge" id="property_num_of_courses"></div>
+                                                    <div>New Cources!</div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+<!--
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+-->
+            
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-yellow">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-database fa-4x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge" id="property_total_files"></div>
+                                                    <div>Total Files Here!</div>
+                                                </div>
+                                            </div>
+                                        </div>
+            <!--
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+            -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-maroon">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-users fa-3x"></i>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div class="huge">QnA</div>
+                                                    <div>Feature Coming </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            <!--
+                                        <a href="#">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">View Details</span>
+                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+            -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> All Courses</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="col-lg">
+            <!--                                    <h2>Basic Table</h2>-->
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover" >
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Course</th>
+                                                                <th>Faculty</th>
+                                                                <th># of Resources</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="allCoursesTable">
+
+            <!--                                                 <tr>
+
+                                                                <td>/services.html</td>
+                                                                <td>421</td>
+                                                                <td>60.3%</td>
+                                                            </tr>
+            -->
+
+
+            <!--
+                                                            <tr>
+                                                                <td><a href="https://www.google.ca" target="_blank">CHECK OUT THIS LINK</a></td>
+                                                                <td>FSDF</td>
+
+                                                                <td>ERT</td>
+                                                            </tr>
+            -->
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                        </div>
+                
+                        
+
+
+                            
+                        <div class="panel panel-default" id=allresourcesdiv>
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> All Resources</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-lg">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="exam_resources"></table>
+                                        <table class="table table-hover" id="test1_resources"></table>
+                                        <table class="table table-hover" id="test2_resources"></table>
+                                        <table class="table table-hover" id="other_resources"></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+<!--
+                        <div id="output" class="oput">Nothing</div>
+                        <button type="button" id="myBtn1">Get Data 1</button>
+-->
+                        
+                    </div>
+
+
+                </div>
+                <!-- /.row -->
+                
+                
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/in_file_data.js"></script>
+    <script src="js/sideNav.js"></script>
+
+    <script>    
+        
+        //---temp made to rip data
+var listOfRes = [
+    //Exams
+    [
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcX2dFNHZPcG1MU1U", 
+        "Exam 2002", 
+        "", 
+        ""],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcSjE3ZFh2OWpLVFU", 
+        "Exam 2003", 
+        "", 
+        ""],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcc0VfVENQemlJY2c", 
+        "Exam 2005", 
+        "", 
+        ""],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcNHRyT1hVRTBKVjg", 
+        "Exam 2008", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcZE4zcF9YMHpvN2s", 
+        "Exam 2008 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcbjh4cklHYkhkRDA", 
+        "Exam 2009", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcVnpzY3dvV0NodE0", 
+        "Exam 2009 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcMHpGLXplNm5kZjQ", 
+        "Exam 2010", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcRm94TXRfU0k0MDQ", 
+        "Exam 2010 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcM2Q3ZzUwVjNyTDA", 
+        "Exam 2011", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcM2Q3ZzUwVjNyTDA", 
+        "Exam 2011 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcWTJjNWdXamRYRGM", 
+        "Exam 2013", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcWTJjNWdXamRYRGM", 
+        "Exam 2013 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcOXNsdUtaQXlpdk0", 
+        "Exam 2014", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcOXNsdUtaQXlpdk0", 
+        "Exam 2014 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcXzJ2ZF9fellzUmM", 
+        "Exam 2015", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcXzJ2ZF9fellzUmM", 
+        "Exam 2015 Solutions"],
+        
+    ],
+    
+    //Test 1
+    [
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcdmJuN2s1SmQ4Q0k", 
+        "Test 1 2002", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcdmJuN2s1SmQ4Q0k", 
+        "Test 1 2002 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcTHl0akk2UjhaSjg", 
+        "Test 1 2003", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcNUdfYWJIQU9XSHM", 
+        "Test 1 2003 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcdW9FRHM4NGZtcjg", 
+        "Test 1 2004", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcdW9FRHM4NGZtcjg", 
+        "Test 1 2004 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIccXZMZWJNNTdxZFk", 
+        "Test 1 2005", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIccXZMZWJNNTdxZFk", 
+        "Test 1 2005 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcWUNmTXlPZUk1d2M", 
+        "Test 1 2006", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcWUNmTXlPZUk1d2M", 
+        "Test 1 2006 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcVzRwNTZVUzYyN2M", 
+        "Test 1 2007", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcVzRwNTZVUzYyN2M", 
+        "Test 1 2007 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcbVZWVHY3d0I3MEU", 
+        "Test 1 2008", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcbVZWVHY3d0I3MEU", 
+        "Test 1 2008 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcUlhkeHowZERTQVU", 
+        "Test 1 2009", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcUlhkeHowZERTQVU", 
+        "Test 1 2009 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcaHB0UWZqTzcwVFU", 
+        "Test 1 2010", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcaHB0UWZqTzcwVFU", 
+        "Test 1 2010 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcT1c2UEJPWWdaMm8", 
+        "Test 1 2011", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcT1c2UEJPWWdaMm8", 
+        "Test 1 2011 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcNVR0djdKYlhxak0", 
+        "Test 1 2012", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcNVR0djdKYlhxak0", 
+        "Test 1 2012 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcQnUyVFo4UHlFTXc", 
+        "Test 1 2013", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcQnUyVFo4UHlFTXc", 
+        "Test 1 2013 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcVWhqTlF5Nkstdlk", 
+        "Test 1 2014", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcVWhqTlF5Nkstdlk", 
+        "Test 1 2014 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcQXUxUmFoSkdFbWc", 
+        "Test 1 2015", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcQXUxUmFoSkdFbWc", 
+        "Test 1 2015 Solutions"],
+        
+            
+    ],
+    
+    //Test 2
+    [
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcUjlDYmxpbnpaWXc", 
+        "Test 2 2002", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcbjFqTVRHUnYtRms", 
+        "Test 2 2002 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcbmNZMllVd2dVWWM", 
+        "Test 2 2003", 
+        "", 
+        ""],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcUTBDcTlBUFlQYUE", 
+        "Test 2 2004 (Version 1)", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcUTBDcTlBUFlQYUE", 
+        "Test 2 2004 (Version 1) Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcRVFnZmEyaEVfaHM", 
+        "Test 2 2005", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcRVFnZmEyaEVfaHM", 
+        "Test 2 2005 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcQ1Z5NzV5ZnZ3TzQ", 
+        "Test 2 2006", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcQ1Z5NzV5ZnZ3TzQ", 
+        "Test 2 2006 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcZjFFSWRSNjVZMVU", 
+        "Test 2 2007", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcZjFFSWRSNjVZMVU", 
+        "Test 2 2007 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcR3haMG5vYnJmZ1E", 
+        "Test 2 2008", 
+        "", 
+        ""],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIccUNPVjVGT0FPODQ", 
+        "Test 2 2009", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIccUNPVjVGT0FPODQ", 
+        "Test 2 2009 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIca2JuaGVBUlNCYU0", 
+        "Test 2 2010", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIca2JuaGVBUlNCYU0", 
+        "Test 2 2010 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcZU9rUmY4SEpldG8", 
+        "Test 2 2011", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcZU9rUmY4SEpldG8", 
+        "Test 2 2011 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcUmxtX2VhYmFVdVk", 
+        "Test 2 2012", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcUmxtX2VhYmFVdVk", 
+        "Test 2 2012 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcbnNOUkRJV3NTSEU", 
+        "Test 2 2013", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcbnNOUkRJV3NTSEU", 
+        "Test 2 2013 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIceDc2NUNjbEJRUUU", 
+        "Test 2 2014", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIceDc2NUNjbEJRUUU", 
+        "Test 2 2014 Solutions"],
+        
+        ["https://drive.google.com/open?id=0B8oq9yQm4RIcRHQ2Njk5b1lXVGM", 
+        "Test 2 2015", 
+        "https://drive.google.com/open?id=0B8oq9yQm4RIcRHQ2Njk5b1lXVGM", 
+        "Test 2 2015 Solutions"],
+        
+        
+        
+    ],
+    
+    //Other
+    [
+       
+      
+    ]
+];
+//        var lislis = [["asd"]];
+//        console.log("asdf "+listOfRes[0][0].length)
+        var ctcs= "";
+        listOfRes.forEach(function(e) {
+            for(var i =0; i<e.length;i++){
+                for(var j=0; j<e[i].length; j++){
+                    console.log(e[i][j]);
+                    
+
+                }
+                ctcs+= '{';
+                ctcs+= '"resourceName": "' + e[i][1]+ '",'
+                ctcs+= '"resourceLink": "' + e[i][0]+ '",'
+                ctcs+= '"resourceSolutionName": "' + e[i][3]+ '",'
+                ctcs+= '"resourceSolutionLink": "' + e[i][2]+ '"'
+                ctcs+= '},';
+
+                    console.log(ctcs);
+
+            }
+
+        });
+        
+        
+        
+        
+        //---templll
+        
+        
+        
+        
+        function fillInfo(e, table){
+
+                                //if both questions and solutions are present fill both
+                    if(e.resourceName != "" && e.resourceSolutionName != "" ){
+                        table.innerHTML += '<tr><td> <i class="fa fa-fw fa-file"></i> <a href =' + e.resourceLink + ' target="_blank">'+ e.resourceName+' </a></td><td>  <i class="fa fa-fw fa-file"></i>  <a href =' + e.resourceSolutionLink + ' target="_blank">'+ e.resourceSolutionName+'</a></td></tr>';
+                    }
+                    //if only questions available fill questions
+                    else if (e.resourceName == "" ){
+                        table.innerHTML += '<tr><td></td><td> <i class="fa fa-fw fa-file"></i>  <a href =' + e.resourceSolutionLink + ' target="_blank">'+ e.resourceSolutionName+'</a></td></tr>';
+                    }
+                    //if only solutions available fill solutions
+                    else if (e.resourceSolutionName == ""){
+                        table.innerHTML += '<tr><td> <i class="fa fa-fw fa-file"></i> <a href =' + e.resourceLink + ' target="_blank">'+ e.resourceName+' </a></td><td></td></tr>';
+                    }
+        }
+        function inflateTable(courseNumber, tableName, resourceType){
+            var table = document.getElementById(tableName);
+
+            if(resourceType == "examResources"){
+                $('#exam_resources').html('<thead><tr><th class="col-lg-6">Exams </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+
+                jsonDataObj[courseNumber].examResources.forEach(function(e) {
+                    fillInfo(e, table);
+                });
+            }
+            else if(resourceType == "test1Resources"){
+                $('#test1_resources').html('<thead><tr><th class="col-lg-6">Test 1 </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+
+                jsonDataObj[courseNumber].test1Resources.forEach(function(e) {
+                    fillInfo(e, table);
+                });
+            }  
+            else if(resourceType == "test2Resources"){
+                $('#test2_resources').html('<thead><tr><th class="col-lg-6">Test 2 </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                jsonDataObj[courseNumber].test2Resources.forEach(function(e) {
+                    fillInfo(e, table);
+                });
+            }
+            else if(resourceType == "otherResources"){
+                $('#other_resources').html('<thead><tr><th class="col-lg-6">Other Resources </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                jsonDataObj[courseNumber].otherResources.forEach(function(e) {
+                    fillInfo(e, table);
+                });
+            }  
+        }
+        function updatePage(index){
+            $('html, body').animate({ scrollTop: 0 }, 0);
+            //update currentpage variable
+            currentCourse = jsonDataObj[index].courseName;
+
+            $('#dashboardId').empty();
+            $("#dashboardId").append([currentCourse]);
+
+            $('#breadcrumbNameId').empty();
+            $("#breadcrumbNameId").append(" " +currentCourse);
+
+            $('#headerNameId').empty();
+            var nameHead = document.getElementById('headerNameId');
+//            nameHead.innerHTML += currentCourse+' <small>Resources</small>';
+            nameHead.innerHTML += currentCourse;
+
+            exam_resources.style.display = 'table';
+            test1_resources.style.display = 'table';
+            test2_resources.style.display = 'table';
+            other_resources.style.display = 'table';
+
+            document.getElementById('mainMenuStuffId').style.display = 'none';
+            document.getElementById('allresourcesdiv').style.display = 'block';
+
+
+            inflateTable(index, "exam_resources", "examResources");
+            inflateTable(index, "test1_resources", "test1Resources");
+            inflateTable(index, "test2_resources", "test2Resources");
+            inflateTable(index, "other_resources", "otherResources");
+            
+            if(jsonDataObj[index].examResources.length == 0) {
+                exam_resources.style.display = 'none';
+            }
+            if(jsonDataObj[index].test1Resources.length == 0) {
+                test1_resources.style.display = 'none';
+            }
+            if(jsonDataObj[index].test2Resources.length == 0) {
+                test2_resources.style.display = 'none';
+            }
+            if(jsonDataObj[index].otherResources.length == 0) {
+                other_resources.style.display = 'none';
+            }
+            
+            updateSideNav();
+        }
+
+                
+        function showMain(){
+            $('html, body').animate({ scrollTop: 0 }, 0);
+            //change current Course to home when home on sidenav is clicked
+            currentCourse = "home";
+
+            $('#dashboardId').empty();
+            $('#breadcrumbNameId').empty();
+//            $("#breadcrumbNameId").html('<li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>');
+            
+            $('#headerNameId').empty();
+            var nameHead = document.getElementById('headerNameId');
+            nameHead.innerHTML += "Welcome! <small>We've hand picked the best resources out there for you</small>";
+            
+
+            
+            document.getElementById('mainMenuStuffId').style.display = 'block';
+            document.getElementById('allresourcesdiv').style.display = 'none';
+            
+            //add to all cources table
+            $('#allCoursesTable').empty();
+            var table_allCourses = document.getElementById('allCoursesTable');
+            for( e = 0 ; e < jsonDataObj.length; e++){
+                var totRes = jsonDataObj[e].examResources.length + jsonDataObj[e].test1Resources.length + jsonDataObj[e].test2Resources.length + jsonDataObj[e].otherResources.length;
+
+//            table_allCourses.innerHTML += "<li class='active'><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.courseName+" "+ e.courseCode+"</a></li>";
+                
+                table_allCourses.innerHTML += '<tr><td> <i class="fa fa-fw fa-file"></i> <a href ="#" onclick="updatePage('+ jsonDataObj[e].index +');return false;" >'+ jsonDataObj[e].courseName+ ' '+ jsonDataObj[e].courseCode+' </a></td> <td>'+ jsonDataObj[e].faculty +'</td> <td>'+ totRes +'</td> </tr>';
+
+            }
+            
+
+            updateSideNav();
+            
+            
+            
+
+        }
+        function calculateTotalFiles(){
+            var sum = 0;
+            jsonDataObj.forEach(function(e) {
+                sum = sum +  e.examResources.length;
+                sum = sum + e.test1Resources.length;
+                sum = sum + e.test2Resources.length;
+                sum = sum + e.otherResources.length;
+
+            });
+            console.log("sum: "+sum);
+            return sum;
+        }
+        
+        function calculateTotalCourses(){
+            return jsonDataObj.length;
+        }
+        
+        if(currentCourse == "home"){
+            showMain();
+        }
+
+        $('#property_num_of_courses').append(""+calculateTotalCourses());
+        $('#property_total_files').append(""+calculateTotalFiles());
+    
+        
+        updateSideNav();
+
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
