@@ -362,27 +362,27 @@ var listOfRes = [];
             var table = document.getElementById(tableName);
 
             if(resourceType == "examResources"){
-                $('#exam_resources').html('<thead><tr><th class="col-lg-6">Exams </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                $('#exam_resources').html('<thead><tr><th class="col-lg-6">Exams </th><th class="col-lg-6">Solutions</th></tr></thead><tbody></tbody>');
 
                 jsonDataObj[courseNumber].examResources.forEach(function(e) {
                     fillInfo(e, table);
                 });
             }
             else if(resourceType == "test1Resources"){
-                $('#test1_resources').html('<thead><tr><th class="col-lg-6">Test 1 </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                $('#test1_resources').html('<thead><tr><th class="col-lg-6">Test 1 </th><th class="col-lg-6">Solutions</th></tr></thead><tbody></tbody>');
 
                 jsonDataObj[courseNumber].test1Resources.forEach(function(e) {
                     fillInfo(e, table);
                 });
             }  
             else if(resourceType == "test2Resources"){
-                $('#test2_resources').html('<thead><tr><th class="col-lg-6">Test 2 </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                $('#test2_resources').html('<thead><tr><th class="col-lg-6">Test 2 </th><th class="col-lg-6">Solutions</th></tr></thead><tbody></tbody>');
                 jsonDataObj[courseNumber].test2Resources.forEach(function(e) {
                     fillInfo(e, table);
                 });
             }
             else if(resourceType == "otherResources"){
-                $('#other_resources').html('<thead><tr><th class="col-lg-6">Other Resources </th><th class="col-lg-6">Solutions if Available</th></tr></thead><tbody></tbody>');
+                $('#other_resources').html('<thead><tr><th class="col-lg-6">Other Resources </th><th class="col-lg-6">Solutions</th></tr></thead><tbody></tbody>');
                 jsonDataObj[courseNumber].otherResources.forEach(function(e) {
                     fillInfo(e, table);
                 });
