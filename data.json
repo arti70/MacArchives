@@ -649,7 +649,7 @@
   {
     "_id": "",
     "index": 3,
-    "faculty": "Commerce",
+    "faculty": "Business",
     "courseName": "Microeconomics",
     "courseCode": "1B03",
     "universityName": "McMaster University",
@@ -795,7 +795,7 @@
   {
     "_id": "",
     "index": 4,
-    "faculty": "Commerce",
+    "faculty": "Business",
     "courseName": "Macroeconomics",
     "courseCode": "1BB3",
     "universityName": "McMaster University",
@@ -1002,7 +1002,7 @@
     "_id": "",
     "index": 5,
     "faculty": "Engineering",
-    "courseName": "Calculas I",
+    "courseName": "Calculus I",
     "courseCode": "1ZA3",
     "universityName": "McMaster University",
     "icon": "fa-superscript",
@@ -1190,7 +1190,7 @@
     "_id": "",
     "index": 6,
     "faculty": "Engineering",
-    "courseName": "Calculas II",
+    "courseName": "Calculus II",
     "courseCode": "1ZB3",
     "universityName": "McMaster University",
     "icon": "fa-superscript",
@@ -1931,6 +1931,456 @@
     ],
     "otherResources": [
       
+    ]
+  },
+  {
+    "_id": "",
+    "index": "11",
+    "faculty": "Engineering",
+    "courseName": "Linear Algebra",
+    "courseCode": "1ZC3 - 1B03",
+    "universityName": "McMaster University",
+    "icon": "fa-book",
+    "professors": [
+      "Chris MacLean"
+    ],
+    "examResources": [
+      {
+        "resourceName": "Exam 2013",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcdHlWZTBCazE0bUU",
+        "resourceSolutionName": "Exam 2013 Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaHkzWlgtYmFDZk0"
+      },
+      {
+        "resourceName": "Exam 2014",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcbFE4cFBfYmFsejQ",
+        "resourceSolutionName": "Exam 2014 Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcc2NpVUYxSnpaRTA"
+      },
+      {
+        "resourceName": "Sample Exam 2013",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcYi1TZktIRHdHQTg",
+        "resourceSolutionName": "Sample Exam 2013 Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcYi1TZktIRHdHQTg"
+      },
+      {
+        "resourceName": "Sample Exam 2016",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMDRsWFhqSjZBU28",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      }
+    ],
+    "test1Resources": [
+      {
+        "resourceName": "Test 1 2011 Summer",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcTjgxRV94S1lSYm8",
+        "resourceSolutionName": "Test 1 2011 Summer Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcTjgxRV94S1lSYm8"
+      },
+      {
+        "resourceName": "Test 1 2011 Winter",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRWpxS0RBaklMcXM",
+        "resourceSolutionName": "Test 1 2011 Winter Solution",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcY0w2aVdvbkxFWVU"
+      },
+      {
+        "resourceName": "Test 1 2012 (v1)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcYjJHUjVuVlltN0k",
+        "resourceSolutionName": "Test 1 2012 (v1)Solution",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaWNLQ0FINmhlMm8"
+      },
+      {
+        "resourceName": "Test 1 2012 (v2)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcQWhRWXRrZmJFdjg",
+        "resourceSolutionName": "Test 1 2012 (v2)",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcNDkwNDJQaGdyVXM"
+      },
+      {
+        "resourceName": "Test 1 2013 Sample",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIca1NidFNqVUphVVU",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Test 1 2013(version A)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcQUpSN0h3SlNpZGs",
+        "resourceSolutionName": "Test 1 2013(version A) Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMENMN3lPb0FPWXc"
+      },
+      {
+        "resourceName": "Test 1 2013(version B)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIca21saks2YWdCMEE",
+        "resourceSolutionName": "Test 1 2013(version B) Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIca21saks2YWdCMEE"
+      },
+      {
+        "resourceName": "Test 1 2014 Samples",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcVHBieXVjRFVMMms",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Test 1 2014(version A)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcZVhPTER0dl9JT1E",
+        "resourceSolutionName": "Test 1 2014(version A) Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcWEVUMXJLRXZJZTg"
+      },
+      {
+        "resourceName": "Test 1 2014(version B)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMFB6ZDJBeTRXN0k",
+        "resourceSolutionName": "Test 1 2014(version B) Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcb1dVb2FEQ29CSGs"
+      },
+      {
+        "resourceName": "Test 1 2016",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcUzhMeWNqOHlLWEE",
+        "resourceSolutionName": "Test 1 2016 Solutions",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcY0ZUZTgtVWd4X28"
+      }
+    ],
+    "test2Resources": [
+      {
+        "resourceName": "Test 2 2011 Summer",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcLXMxMnU3TW1TaGM",
+        "resourceSolutionName": "Test 2 2011 Summer Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcLXMxMnU3TW1TaGM"
+      },
+      {
+        "resourceName": "Test 2 2011 Winter(version 1)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaDFxYW1KOXplNUE",
+        "resourceSolutionName": "Test 2 2011 Winter(version 1) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcYkdfYzUyUHVDaTA"
+      },
+      {
+        "resourceName": "Test 2 2012 Winter(version 1)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcUzFLRFhZb2thb0U",
+        "resourceSolutionName": "Test 2 2012 Winter(version 1) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccDBuNktkXzRaOEU"
+      },
+      {
+        "resourceName": "Test 2 2012 Winter(version 2)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMDZTanM2TFJvbE0",
+        "resourceSolutionName": "Test 2 2012 Winter(version 2) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRXk1TVpWc0xrQkU"
+      },
+      {
+        "resourceName": "Test 2 2012 Winter(version 3)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcR1lPU2stTkVYaHc",
+        "resourceSolutionName": "Test 2 2012 Winter(version 3) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcbTNNQ0lTMW8waUU"
+      },
+      {
+        "resourceName": "Test 2 2014 Version A",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcTXhVQVhpS053X0E",
+        "resourceSolutionName": "Test 2 2014 Version A Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcOXhsOFlPcHp5TVk"
+      },
+      {
+        "resourceName": "Test 2 2014 Version B",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcVkVzUjhWcWNVTTA",
+        "resourceSolutionName": "Test 2 2014 Version B Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaWdTYXBaSjdXMzg"
+      },
+      {
+        "resourceName": "Test 2 2016 Sample",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcOExvQUFGejlIcUE",
+        "resourceSolutionName": "Test 2 2016 Sample Solution",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccFBUSmkzT3VYMHM"
+      }
+    ],
+    "otherResources": [
+      
+    ]
+  },
+  {
+    "_id": "",
+    "index": "12",
+    "faculty": "Science",
+    "courseName": "BIOLOGY 1M03 - Biodiversity, Evolution and Humanity",
+    "courseCode": "1M03",
+    "universityName": "McMaster University",
+    "icon": "fa-book",
+    "professors": [
+      "Dr. Bolker",
+      "Dr. Stone",
+      "Dr. Evans",
+      "Dr. Kaijura"
+    ],
+    "examResources": [
+      
+    ],
+    "test1Resources": [
+      {
+        "resourceName": "Test 1 2012",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcLUNEMFRUcFJJUWc",
+        "resourceSolutionName": "Test 1 2012 Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcLUNEMFRUcFJJUWc"
+      },
+      {
+        "resourceName": "Test 1 2013 (part 1)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMnBwdGVKdExUcnc",
+        "resourceSolutionName": "Test 1 2013 (part 1) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMnBwdGVKdExUcnc"
+      },
+      {
+        "resourceName": "Test 1 2013 (part 2)",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSk9qUGpHRHdmOUE",
+        "resourceSolutionName": "Test 1 2013 (part 2) Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSk9qUGpHRHdmOUE"
+      },
+      {
+        "resourceName": "Test 1 2013 Winter",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcd0NONzNCZUJLd1k",
+        "resourceSolutionName": "Test 1 2013 Winter Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcd0NONzNCZUJLd1k"
+      }
+    ],
+    "test2Resources": [
+      {
+        "resourceName": "Test 2 2012",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcWlk2bno3VFlaVEU",
+        "resourceSolutionName": "Test 2 2012 Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcWlk2bno3VFlaVEU"
+      },
+      {
+        "resourceName": "Test 1 2013 Winter",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRi1VSEZOb1VBdVE",
+        "resourceSolutionName": "Test 1 2013 Winter Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRi1VSEZOb1VBdVE"
+      }
+    ],
+    "otherResources": [
+      {
+        "resourceName": "1M03 Exam Notes",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcU1p5R2RkajlKa2s",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "1M03 Course Notes",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcOWhJbzU3ZGYzZUk",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      }
+    ]
+  },
+  {
+    "_id": "",
+    "index": "13",
+    "faculty": "Science",
+    "courseName": "CHEM 1A03 - Introductory Chemistry I",
+    "courseCode": "1A03",
+    "universityName": "McMaster University",
+    "icon": "fa-book",
+    "professors": [
+      "Dr. Brock",
+      "Dr. Lock"
+    ],
+    "examResources": [
+      {
+        "resourceName": "Exam 2003",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRWZMTHp6cmVSUVk",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2005",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcZVo2VFVzSHN2dDA",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2007",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIceVFWdkZpbWxZQkk",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2008",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcbHo4dWFMRnR3MlU",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2009",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccjVJTU1JQmVVQ1E",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2010",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcdHF0M1NTYUhNSVE",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2011",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMVlPbVJKeUo1Rms",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Exam 2013",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcVWY5dXQ5T3ZSZk0",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      }
+    ],
+    "test1Resources": [
+      {
+        "resourceName": "Test 1 2005",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSXBJVXR0bXJUTnM",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSXBJVXR0bXJUTnM"
+      },
+      {
+        "resourceName": "Test 1 2007",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccTFvVU92Z0VqX00",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccTFvVU92Z0VqX00"
+      },
+      {
+        "resourceName": "Test 1 2008",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcQUQ1WW11NFlUM0k",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcQUQ1WW11NFlUM0k"
+      },
+      {
+        "resourceName": "Test 1 2009",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIceERVeE5vS0x3a00",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIceERVeE5vS0x3a00"
+      },
+      {
+        "resourceName": "Test 1 2010",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaWpDYXNObVFISlU",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaWpDYXNObVFISlU"
+      },
+      {
+        "resourceName": "Test 1 2011",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcNWFVYnFQNnVndFU",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcNWFVYnFQNnVndFU"
+      },
+      {
+        "resourceName": "Test 1 2012",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcR2RHZWlvTS1Rcnc",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcR2RHZWlvTS1Rcnc"
+      },
+      {
+        "resourceName": "Test 1 2013",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMWF3cEVkU0NPbmM",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMWF3cEVkU0NPbmM"
+      }
+    ],
+    "test2Resources": [
+      {
+        "resourceName": "Test 2 2006",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSlE2bnU2ejVNN2c",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSlE2bnU2ejVNN2c"
+      },
+      {
+        "resourceName": "Test 2 2006 Fall",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcbjRFME1aRnQ1NTg",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Test 2 2008",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRGR6VGp2Z1ZCQlE",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcRGR6VGp2Z1ZCQlE"
+      },
+      {
+        "resourceName": "Test 2 2009",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaERiTVZHTkZiLUk",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaERiTVZHTkZiLUk"
+      },
+      {
+        "resourceName": "Test 2 2010",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaDdYemk3Vk1hcFU",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcaDdYemk3Vk1hcFU"
+      },
+      {
+        "resourceName": "Test 2 2011",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcR1ZaXzdpb1hfN2c",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcR1ZaXzdpb1hfN2c"
+      },
+      {
+        "resourceName": "Test 2 2012",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcdTRrRldhb1FPUDA",
+        "resourceSolutionName": "Answers",
+        "resourceSolutionLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcdTRrRldhb1FPUDA"
+      }
+    ],
+    "otherResources": [
+      {
+        "resourceName": "Chapter 5 Notes - Reactions in Aqueous Solutions",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcc0pNQ0RkcmFRRUk",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 7 Notes - Thermochemistry",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcSUp3aVViOWFwVVE",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 8 Notes - Electrons in Atoms",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcdTNra0gyZnJZbFU",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 9 Notes - The Periodic Table and Some Atomic Properties",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcck90UzdQY0xPLWc",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 10 Notes  - Chemical Bonding",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccGJmS0o2ZFJFcUk",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 15 Notes - Principles of Chemical Equilibrium",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIccTM4bWJrN1N6QU0",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 16 Notes - Acids and Bases",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcN1NIc2lKWmNjMkU",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chapter 20 Notes - Electrochemistry",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcN1RONHR1OHQ2NGc",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Fundamental Skills Review",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcM3FMZDExOVBscTA",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      },
+      {
+        "resourceName": "Chemistry Review Manual",
+        "resourceLink": "https://drive.google.com/open?id=0B8oq9yQm4RIcMjF1WnliTm8zZWc",
+        "resourceSolutionName": "",
+        "resourceSolutionLink": ""
+      }
     ]
   }
 ]

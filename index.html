@@ -392,6 +392,7 @@ var listOfRes = [];
             $('html, body').animate({ scrollTop: 0 }, 0);
             //update currentpage variable
             currentCourse = jsonDataObj[index].courseName;
+            currentCourseCode = jsonDataObj[index].courseCode;
 
             $('#dashboardId').empty();
             $("#dashboardId").append([currentCourse]);
@@ -402,7 +403,7 @@ var listOfRes = [];
             $('#headerNameId').empty();
             var nameHead = document.getElementById('headerNameId');
 //            nameHead.innerHTML += currentCourse+' <small>Resources</small>';
-            nameHead.innerHTML += currentCourse;
+            nameHead.innerHTML += currentCourse + " " + currentCourseCode;
 
             exam_resources.style.display = 'table';
             test1_resources.style.display = 'table';
