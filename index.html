@@ -56,7 +56,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class='navbar-brand' href ='#' onclick='showMain();return false;'>MacArchives Library</a>
+                <a class='navbar-brand' href ='#' onclick='showMain();return false;'>M a c A r c h i v e s  _  L i b r a r y  </a>
             </div>
             <!-- Top Menu Items -->
             
@@ -111,7 +111,7 @@
 
                             <div class="row">
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-yellow">
+                                    <div class="panel panel-primary">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -135,7 +135,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-maroon">
+                                    <div class="panel panel-red">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -184,8 +184,9 @@
             -->
                                     </div>
                                 </div>
+
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-maroon">
+                                    <div class="panel panel-green">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -476,7 +477,7 @@ var listOfRes = [];
         function calculateTotalFiles(){
             var sum = 0;
             jsonDataObj.forEach(function(e) {
-                sum = sum +  e.examResources.length;
+                sum = sum + e.examResources.length;
                 sum = sum + e.test1Resources.length;
                 sum = sum + e.test2Resources.length;
                 sum = sum + e.otherResources.length;

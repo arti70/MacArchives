@@ -10,10 +10,10 @@ function updateSideNav(){
     }
     jsonDataObj.forEach(function(e) {
         if(e.courseName == currentCourse){
-            navHead.innerHTML += "<li class='active'><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.courseName+" "+ e.courseCode+"</a></li>";
+            navHead.innerHTML += "<li class='active'><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.shortName+"</a></li>";
         }
         else{
-            navHead.innerHTML += "<li><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.courseName+" "+ e.courseCode+"</a></li>";
+            navHead.innerHTML += "<li><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.shortName+"</a></li>";
         }
     });
     console.log("updatesSideNav");

@@ -5,6 +5,7 @@
     "faculty": "Engineering",
     "courseName": "ENGINEER 1C03 - Engineering Design and Graphics",
     "courseCode": "1C03",
+    "shortName": "ENGINEER 1C03",
     "universityName": "McMaster University",
     "icon": "fa-th",
     "professors": [
@@ -82,6 +83,7 @@
     "faculty": "Science",
     "courseName": "PHYSICS 1D03 - Introductory Mechanics",
     "courseCode": "1D03",
+    "shortName": "PHYSICS 1D03",
     "universityName": "McMaster University",
     "icon": "fa-magnet",
     "professors": [
@@ -271,6 +273,7 @@
     "faculty": "Science",
     "courseName": "PHYSICS 1E03 - Waves, Electricity and Magnetic Fields",
     "courseCode": "1E03",
+    "shortName": "PHYSICS 1E03",
     "universityName": "McMaster University",
     "icon": "fa-magnet",
     "professors": [
@@ -652,6 +655,7 @@
     "faculty": "Business",
     "courseName": "ECON 1B03 - Introductory Microeconomics",
     "courseCode": "1B03",
+    "shortName": "ECON 1B03",
     "universityName": "McMaster University",
     "icon": "fa-bank",
     "professors": [
@@ -798,6 +802,7 @@
     "faculty": "Business",
     "courseName": "ECON 1BB3 - Introductory Macroeconomics",
     "courseCode": "1BB3",
+    "shortName": "ECON 1BB3",
     "universityName": "McMaster University",
     "icon": "fa-bank",
     "professors": [
@@ -1004,6 +1009,7 @@
     "faculty": "Mathematics",
     "courseName": "MATH 1ZA3 - Engineering Mathematics I",
     "courseCode": "1ZA3",
+    "shortName": "MATH 1ZA3",
     "universityName": "McMaster University",
     "icon": "fa-superscript",
     "professors": [
@@ -1192,6 +1198,7 @@
     "faculty": "Mathematics",
     "courseName": "MATH 1ZB3 - Engineering Mathematics II-A",
     "courseCode": "1ZB3",
+    "shortName": "MATH 1ZB3",
     "universityName": "McMaster University",
     "icon": "fa-superscript",
     "professors": [
@@ -1351,6 +1358,7 @@
     "faculty": "Science",
     "courseName": "CHEM 1E03 - General Chemistry for Engineering I",
     "courseCode": "1E03",
+    "shortName": "CHEM 1E03",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
@@ -1480,6 +1488,7 @@
     "faculty": "Engineering",
     "courseName": "ENGINEER 1D04 - Engineering Computation",
     "courseCode": "1D04",
+    "shortName": "ENGINEER 1D04",
     "universityName": "McMaster University",
     "icon": "fa-code",
     "professors": [
@@ -1610,6 +1619,7 @@
     "faculty": "Engineering",
     "courseName": "ENGINEER 1P03 - Engineering Profession and Practice",
     "courseCode": "1P03",
+    "shortName": "ENGINEER 1P03",
     "universityName": "McMaster University",
     "icon": "fa-gears",
     "professors": [
@@ -1690,6 +1700,7 @@
     "faculty": "Engineering",
     "courseName": "MATLS 1M03 - Structure and Properties of Materials",
     "courseCode": "1M03",
+    "shortName": "MATLS 1M03", 
     "universityName": "McMaster University",
     "icon": "fa-unlink",
     "professors": [
@@ -1939,6 +1950,7 @@
     "faculty": "Mathematics",
     "courseName": "MATH 1ZC3 - Engineering Mathematics II-B",
     "courseCode": "1ZC3 - 1B03",
+    "shortName": "MATH 1ZC3",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
@@ -2098,6 +2110,7 @@
     "faculty": "Science",
     "courseName": "BIOLOGY 1M03 - Biodiversity, Evolution and Humanity",
     "courseCode": "1M03",
+    "shortName": "BIOLOGY 1M03",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
@@ -2170,6 +2183,7 @@
     "faculty": "Science",
     "courseName": "CHEM 1A03 - Introductory Chemistry I",
     "courseCode": "1A03",
+    "shortName": "CHEM 1A03",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
@@ -2389,6 +2403,7 @@
     "faculty": "Science",
     "courseName": "CHEM 1AA3 - Introductory Chemistry II",
     "courseCode": "1AA3",
+    "shortName": "CHEM 1AA3",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
@@ -2669,6 +2684,7 @@
     "faculty": "Mathematics",
     "courseName": "MATH 1LS3 - Calculus for the Life Sciences I",
     "courseCode": "1LS3",
+    "shortName": "MATH 1LS3",
     "universityName": "McMaster University",
     "icon": "fa-book",
     "professors": [
