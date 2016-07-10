@@ -49,13 +49,16 @@
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
+            
             <div class="navbar-header">
+                
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<!--                <img src="images/macarchive_logo4.png" alt="" style="width:50px;height:50px;">-->
                 <a class='navbar-brand' href ='#' onclick='showMain();return false;'>M a c A r c h i v e s  _  L i b r a r y  </a>
             </div>
             <!-- Top Menu Items -->
@@ -263,25 +266,98 @@
                         </div>
                 
                         
-
-
-                            
-                        <div class="panel panel-default" id=allresourcesdiv>
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> All Resources</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-lg">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover" id="exam_resources"></table>
-                                        <table class="table table-hover" id="test1_resources"></table>
-                                        <table class="table table-hover" id="test2_resources"></table>
-                                        <table class="table table-hover" id="other_resources"></table>
+                         <div class="row">
+                             <div class="col-lg-12">
+                                 <div class="col-lg-9">
+                                    <div class="panel panel-default" id=allresourcesdiv>
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> All Resources</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="col-lg">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover" id="exam_resources"></table>
+                                                    <table class="table table-hover" id="test1_resources"></table>
+                                                    <table class="table table-hover" id="test2_resources"></table>
+                                                    <table class="table table-hover" id="other_resources"></table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                 
+                                <div class="col-lg-3">
+                                    <div class="panel panel-default " id=statsBar>
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Statistics</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="col-lg">
+                                                
+                                                
+                                                
+                                                
+                                                <div class="panel panel-maroon">
+                                                    
+                                                    <div class="panel-heading">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 text-left">
+                                                                <div class="huge" id="numRes_info"></div>
+                                                                <div>Total Resources</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                                <div class="panel panel-primary">
+                                                    
+                                                    <div class="panel-heading">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 text-left">
+                                                                <div class="mid">Instructor(s):</div>
+                                                                <div id="prof_info"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                                <div class="panel panel-yellow">
+                                                    
+                                                    <div class="panel-heading">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 text-left">
+                                                                <div class="mid" >Faculty</div>
+                                                                <div id="faculty_info"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                
+                                                
+                                                
+
+                                                
+                                                
+                                                
+ 
+                                              
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                             </div>
                         </div>
-                    
+
 <!--
                         <div id="output" class="oput">Nothing</div>
                         <button type="button" id="myBtn1">Get Data 1</button>
@@ -405,6 +481,31 @@ var listOfRes = [];
             var nameHead = document.getElementById('headerNameId');
 //            nameHead.innerHTML += currentCourse+' <small>Resources</small>';
             nameHead.innerHTML += currentCourse + " " + currentCourseCode;
+            
+            
+            
+            $('#prof_info').empty();
+            var asdf = document.getElementById('prof_info');
+            
+            var holderString1="";
+            jsonDataObj[index].professors.forEach(function(e) {
+                console.log(e);
+                holderString1 += e +"<br>";
+            });
+            
+            asdf.innerHTML += holderString1;
+            
+            
+            
+            
+            $('#numRes_info').empty();
+            document.getElementById('numRes_info').innerHTML += jsonDataObj[index].examResources.length + jsonDataObj[index].test1Resources.length + jsonDataObj[index].test2Resources.length + jsonDataObj[index].otherResources.length;
+            
+            
+            $('#faculty_info').empty();
+            document.getElementById('faculty_info').innerHTML += jsonDataObj[index].faculty;
+            
+            
 
             exam_resources.style.display = 'table';
             test1_resources.style.display = 'table';
@@ -413,6 +514,9 @@ var listOfRes = [];
 
             document.getElementById('mainMenuStuffId').style.display = 'none';
             document.getElementById('allresourcesdiv').style.display = 'block';
+            document.getElementById('statsBar').style.display = 'block';
+
+            
 
 
             inflateTable(index, "exam_resources", "examResources");
@@ -454,6 +558,8 @@ var listOfRes = [];
             
             document.getElementById('mainMenuStuffId').style.display = 'block';
             document.getElementById('allresourcesdiv').style.display = 'none';
+            document.getElementById('statsBar').style.display = 'none';
+
             
             //add to all cources table
             $('#allCoursesTable').empty();
