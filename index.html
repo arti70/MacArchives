@@ -218,7 +218,7 @@
                                                     <i class="fa fa-users fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-9 text-right">
-                                                    <div class="huge">QnA</div>
+                                                    <div class="huge">Q&amp;A</div>
                                                     <div>Feature Coming </div>
                                                 </div>
                                             </div>
@@ -299,6 +299,7 @@
                                         <div class="panel-body">
                                             <div class="col-lg">
                                                 <div class="table-responsive">
+                                                    <div id="no_res_alert"></div>
                                                     <table class="table table-hover" id="exam_resources"></table>
                                                     <table class="table table-hover" id="test1_resources"></table>
                                                     <table class="table table-hover" id="test2_resources"></table>
@@ -502,7 +503,7 @@ var listOfRes = [];
             $('html, body').animate({ scrollTop: 0 }, 0);
             //update currentpage variable
             currentCourse = jsonDataObj[index].courseName;
-            currentCourseCode = jsonDataObj[index].courseCode;
+//            currentCourseCode = jsonDataObj[index].courseCode;
 
             $('#dashboardId').empty();
             $("#dashboardId").append([currentCourse]);
@@ -513,8 +514,9 @@ var listOfRes = [];
             $('#headerNameId').empty();
             var nameHead = document.getElementById('headerNameId');
 //            nameHead.innerHTML += currentCourse+' <small>Resources</small>';
-            nameHead.innerHTML += currentCourse + " " + currentCourseCode;
+            nameHead.innerHTML += currentCourse;
             
+//            no_res_alert
             
             
             $('#prof_info').empty();
@@ -532,8 +534,13 @@ var listOfRes = [];
             
             
             $('#numRes_info').empty();
-            document.getElementById('numRes_info').innerHTML += jsonDataObj[index].examResources.length + jsonDataObj[index].test1Resources.length + jsonDataObj[index].test2Resources.length + jsonDataObj[index].otherResources.length;
+            var totalResourcesAvailable = jsonDataObj[index].examResources.length + jsonDataObj[index].test1Resources.length + jsonDataObj[index].test2Resources.length + jsonDataObj[index].otherResources.length
+            document.getElementById('numRes_info').innerHTML += totalResourcesAvailable;
             
+            $('#no_res_alert').empty();
+            if(totalResourcesAvailable == 0){
+                document.getElementById('no_res_alert').innerHTML += "Uh oh! Looks like we don't have anything here, Check again later or SUBMIT anything useful that you have!";
+            }
             
             $('#faculty_info').empty();
             document.getElementById('faculty_info').innerHTML += jsonDataObj[index].faculty;
@@ -602,7 +609,7 @@ var listOfRes = [];
 
 //            table_allCourses.innerHTML += "<li class='active'><a id="+ e.id +"href ='#' onclick='updatePage("+ e.index +");return false;' ><i class='fa fa-fw "+e.icon+"' ></i> "+ e.courseName+" "+ e.courseCode+"</a></li>";
                 
-                table_allCourses.innerHTML += '<tr><td> <i class="fa fa-fw fa-file"></i> <a href ="#" onclick="updatePage('+ jsonDataObj[e].index +');return false;" >'+ jsonDataObj[e].courseName+ ' '+ jsonDataObj[e].courseCode+' </a></td> <td>'+ jsonDataObj[e].faculty +'</td> <td>'+ totRes +'</td> </tr>';
+                table_allCourses.innerHTML += '<tr><td> <i class="fa fa-fw fa-file"></i> <a href ="#" onclick="updatePage('+ jsonDataObj[e].index +');return false;" >'+ jsonDataObj[e].courseName+ ' '+ ''+' </a></td> <td>'+ jsonDataObj[e].faculty +'</td> <td>'+ totRes +'</td> </tr>';
 
             }
             
