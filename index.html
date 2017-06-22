@@ -40,6 +40,22 @@
       ga('send', 'pageview');
 
     </script>
+    
+    <script>
+    /**
+    * Function that tracks a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+    </script>
+    
 </head>
 
 <body>
@@ -92,8 +108,9 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 <!--                            <i class="fa fa-info-circle"></i>-->
                             
-                            <strong>Help us grow and send us any resource you have! LIFE SCIENCE, COMMERCE, POLSCI and ENGINEERING resources coming soon! <br>Got questions? Email us at macarchives2016@gmail.com<br><br><i class="fa fa-cloud-upload fa-2x" ></i><a href="https://form.jotform.com/MacArchives/addfiles" target="_blank">
-                                CLICK HERE TO SUBMIT RESOURCES</a></strong>
+                                <strong>Help us grow and send us any resource you have! LIFE SCIENCE, COMMERCE, POLSCI and ENGINEERING resources coming soon! <br>Got questions? Email us at macarchives2016@gmail.com<br><br><i class="fa fa-cloud-upload fa-2x" ></i><a href="https://form.jotform.com/MacArchives/addfiles" target="_blank">
+                                CLICK HERE TO SUBMIT RESOURCES</a>
+                                </strong>
                            
                             
 <!--
@@ -116,6 +133,20 @@
 -->
 
                         </div>
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-link fa-fw"></i>Our Partners</h3>
+                                </div>
+                            
+                                <div class="panel-heading" align="middle">
+                                    <a  href="https://www.mapleride.com" target="_blank" onclick="trackOutboundLink('https://www.mapleride.com'); return false;" >
+                                        <div>
+                                            <img src="images/mapleride.jpg" height="125"/>
+                                        </div>
+                                    </a>
+                                </div>
+                        </div>
+                        
                         <div id= "mainMenuStuffId">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -150,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-red">
+                                    <div class="panel panel-yellow">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -176,7 +207,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-yellow">
+                                    <div class="panel panel-maroon">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -201,7 +232,7 @@
                                 </div>
 
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-primary">
+                                    <div class="panel panel-yellow">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
@@ -280,8 +311,8 @@
                                             <tbody>
                                                 <tr><br></tr>
                     <tr><strong>Anonymous </strong>contributed <strong>11</strong> resources for <strong>MATH 1ZB3 </strong></tr><br>
-                    <tr><strong>Maddy Divinski </strong>contributed <strong>2</strong> resources for <strong>PSYCH 1X03 </strong></tr><br>
-                    <tr><strong>Molly </strong>contributed <strong>12</strong> resources for <strong>BIO 1A03 </strong></tr><br>
+                    <tr><strong>Anonymous </strong>contributed <strong>2</strong> resources for <strong>PSYCH 1X03 </strong></tr><br>
+                    <tr><strong>Anonymous </strong>contributed <strong>12</strong> resources for <strong>BIO 1A03 </strong></tr><br>
 
                                             </tbody>
                                             <br>
